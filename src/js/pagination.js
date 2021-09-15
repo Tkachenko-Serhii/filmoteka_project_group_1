@@ -45,16 +45,24 @@ export default class Pagination {
       }
     }
     // how many pages or li show before the current li
-    if (page == totalPages) {
-      beforePage = beforePage - 2;
-    } else if (page == totalPages - 1) {
-      beforePage = beforePage - 1;
-    }
-    // how many pages or li show after the current li
-    if (page == 1) {
-      afterPage = afterPage + 2;
-    } else if (page == 2) {
-      afterPage = afterPage + 1;
+    if (totalPages > 2) {
+      if (page == totalPages) {
+        beforePage = beforePage - 2;
+      } else if (page == totalPages - 1) {
+        beforePage = beforePage - 1;
+      }
+      // how many pages or li show after the current li
+      if (page == 1) {
+        afterPage = afterPage + 2;
+      } else if (page == 2) {
+        afterPage = afterPage + 1;
+      }
+    } else if (totalPages === 1) {
+      beforePage = 1;
+      afterPage = 1;
+    } else {
+      beforePage = 1;
+      afterPage = 2;
     }
 
     for (let plength = beforePage; plength <= afterPage; plength++) {
