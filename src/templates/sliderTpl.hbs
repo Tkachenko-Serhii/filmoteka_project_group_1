@@ -1,0 +1,27 @@
+{{#each this}}
+  <li class='slider-card' data-action='{{id}}'>
+    <a class='link' href='#'>
+      {{#if poster_path}}
+        <img
+          class='slider__image'
+          src='https://image.tmdb.org/t/p/w300/{{poster_path}}'
+          data-source='{{id}}'
+          alt='{{title}} {{name}}'
+          onload='loader.onCardLoaded()'
+          ,
+          onerror='loader.onCardLoaded()'
+        />
+      {{else}}
+        <img
+          class='slider__image'
+          src='https://bookslibs.info/assets/general/images/no_poster.jpg'
+          data-source='{{id}}'
+          alt='{{title}} {{name}}'
+          onload='loader.onCardLoaded()'
+          ,
+          onerror='loader.onCardLoaded()'
+        />
+      {{/if}}
+    <span class='modal-card__data--vote'>{{vote_average}}</span>
+  </li>
+{{/each}}

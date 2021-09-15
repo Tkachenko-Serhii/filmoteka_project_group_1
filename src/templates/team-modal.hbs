@@ -1,0 +1,15 @@
+<div class="team__modal">
+    <ul class="team__cards">
+        {{#each this}}
+        <li class="team__item">
+            <a class="team__thumb" target="_blank" href="{{git}}">
+                <img src="{{foto}}" alt="Foto{{name}}" class="team__img">
+                <span class="team__git" ></span>
+            </a>
+            <h2 class="team__name">{{name}}</h2>
+            <p class="team__description">{{role}}</p>
+            <a class="team__contact link" href="mailto:{{mail}}">{{mail}}</a>
+        </li>
+    {{/each}}
+    </ul>
+</div>

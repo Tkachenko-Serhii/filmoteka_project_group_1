@@ -5,10 +5,10 @@
 
 // import from folder vendors
 @import './vendors/normalize';
+@import './vendors/basicLightbox.min';
 
 // import from folder utils
 @import './utils/variables';
-@import './utils/visually-hidden';
 @import './utils/mixins';
 @import './utils/placeholder';
 
@@ -19,9 +19,19 @@
 // import from folder components
 @import './components/buttons';
 @import './components/toggle';
-@import './components/_modal-content.scss';
-@import './components/_modal.scss';
-@import './components/_backdrop.scss';
+@import './components/modal-content';
+@import './components/modal';
+@import './components/loader';
+@import './components/pagination';
+@import './components/delete';
+@import './components/arrowTop.scss';
+@import './components/player';
+@import './components/genres-list';
 
 // import from folder layout
+@import './layout/body';
+@import './layout/footer';
 @import './layout/header';
+@import './layout/gallery';
+@import './layout/header-lib';
+@import './layout/team-modal';

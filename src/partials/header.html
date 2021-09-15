@@ -1,1 +1,54 @@
+<div class="header-js bg-header">
+  <header class="header check-header">
+  <div class="container">
+    <nav class="navigation">
+        <a class="logo logo__common" href="https://tkachenko-serhii.github.io/filmoteka_project_group_1/">
+          <svg class="logo__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#film"></use>
+          </svg>
+          <h1 class="logo__name">Filmoteka</h1>
+        </a>
+        <ul class="site-nav topmenu">
+          <li class="site-nav__item">
+              <a href="" class="site-nav__link site-nav__link--current-page home link">
+              HOME</a></li>
+          <li class="site-nav__item"> <a href="" class="site-nav__link library link">
+              MY LIBRARY</a></li>
+          <li class="site-nav__item dropdown">
+            <a href="" class="site-nav__link dropdown__menu link ">
+            GENRES</a> 
+            <ul id="genresDropdown" class="dropdown-content submenu">
+            <li class="genres-item"><a class="genres-link link" href="#home">Comedy</a></li>
+            <li class="genres-item"><a class="genres-link link" href="#home">Drama</a></li>
+            <li class="genres-item"><a class="genres-link link" href="#home">Thriller</a></li>
+            <li class="genres-item"><a class="genres-link link" href="#home">Western</a></li>
+            <li class="genres-item"><a class="genres-link link" href="#home">Horror</a></li>            
+            </ul>                   
+          </li>
+        </ul>
+      </nav>
+    <div class="toggle toggle--daynight">
+          <input type="checkbox" id="toggle--daynight" class="toggle--checkbox theme-switch__toggle">
+          <label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label>
+    </div>
+    <div class="buttons-js">
+      <form class="search-form" id="search-form">
+        <input
+          class="search-input"
+          type="text"
+          name="input"
+          autocomplete="off"
+          placeholder="Поиск фильмов"
+        />
+        <button type="submit" class="search-button">
+            <svg class="search-icon" width='12'height="12">
+                <use href = "./images/icons/sprite.svg#search">
+            </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+</div>
+
 
