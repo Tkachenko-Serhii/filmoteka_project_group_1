@@ -48,7 +48,6 @@ function createMarkup(dataArr) {
       });
     }
   });
-  console.log(list);
   return list;
 }
 
