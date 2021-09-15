@@ -10,17 +10,16 @@ export const apiService = new ApiService(API_KEY);
 import './js/team-modal.js';
 import './js/loader.js';
 import './js/inputSearch';
-import './js/slider';
 import './js/arrowTop';
+import getTopMovies from './js/slider';
 import showAllert from './js/show-allert';
 import openModal from './js/modal';
 import createGalleryMarkup from './js/create-gallery-markup.js';
 import libraryMarkup from './js/libraryMarkup';
 import Pagination from './js/pagination.js';
-import slider from './js/slider';
 import openGanresList from './js/genres.js';
-import scrollbtn from './js/arrowTop';
 
+getTopMovies();
 apiService.getTrendingMovies().then(createGalleryMarkup).catch(showAllert);
 
 const newPagination = new Pagination(apiService);

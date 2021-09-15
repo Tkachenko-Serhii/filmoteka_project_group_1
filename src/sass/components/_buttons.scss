@@ -43,20 +43,11 @@
   }
 }
 
-// конец
-
 .button-orange {
   @extend %button;
   color: #fff;
   background-color: var(--background-accent);
   border: 1px solid var(--background-accent);
-
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--background-accent);
-  //   border: 1px solid var(--background-accent);
-  //   color: var(--main-white-color);
-  // }
 }
 
 .button-white {
@@ -64,12 +55,6 @@
   color: var(--main-white-color);
   background-color: transparent;
   border: 1px solid var(--main-white-color);
-
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--background-accent);
-  //   border: 1px solid var(--background-accent) !important;
-  // }
 }
 
 .button-active {

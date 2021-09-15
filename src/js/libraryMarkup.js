@@ -35,7 +35,6 @@ export function chechHeader() {
     refs.navHome.classList.remove('site-nav__link--current-page');
     refs.genresList.classList.remove('site-nav__link--current-page');
     refs.library.classList.add('site-nav__link--current-page');
-    //refs.genresList.classList.add('hide_submenu');
   }
 }
 

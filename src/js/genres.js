@@ -5,7 +5,6 @@ import createGalleryMarkup from './create-gallery-markup';
 import showAllert from './show-allert';
 
 const refs = getRefs();
-const genresList = ['Comedy', 'Drama', 'History', 'Family', 'Horror'];
 
 export default function openGanresList(event) {
   event.preventDefault();

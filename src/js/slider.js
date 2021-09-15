@@ -19,10 +19,10 @@ const glide = new Glide('.slider', {
   swipeThreshold: 40,
 });
 
-getTopMovies();
+// getTopMovies();
 glide.mount();
 
-function getTopMovies() {
+export default function getTopMovies() {
   const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=0e03d2359202713e59ab7c25960ab620&language=en-US&page=1`;
   return fetch(url)
     .then(response => response.json())
