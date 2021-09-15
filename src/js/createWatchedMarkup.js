@@ -44,9 +44,11 @@ function createMarkup(dataArr) {
         vote_average: data.vote_average,
         id: data.id,
         poster_path: data.poster_path,
+        title: data.title,
       });
     }
   });
+  console.log(list);
   return list;
 }
 

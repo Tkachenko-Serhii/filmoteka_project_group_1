@@ -23,6 +23,7 @@ export default function createGalleryMarkup(data) {
       vote_average: card.vote_average,
       genres: genreList.join(', '),
       id: card.id,
+      title: card.title,
     };
   });
   refs.movies.innerHTML = renderCards(cardList);

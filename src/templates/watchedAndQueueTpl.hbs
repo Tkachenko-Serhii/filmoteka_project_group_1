@@ -8,6 +8,7 @@
       <img 
         class='gallery__video' 
         src='https://image.tmdb.org/t/p/w300/{{poster_path}}' 
+        alt='{{title}}'
         data-source='{{id}}'
         onload="loader.onCardLoaded()"
         onerror="loader.onCardLoaded()"/>
@@ -15,6 +16,7 @@
       <img 
         class='gallery__video' 
         src='https://bookslibs.info/assets/general/images/no_poster.jpg' 
+        alt='{{title}}'
         data-source='{{id}}'
         onload="loader.onCardLoaded()"
         onerror="loader.onCardLoaded()" />
