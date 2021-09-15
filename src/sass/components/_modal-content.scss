@@ -110,7 +110,7 @@ div.modal.dark-theme {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {
-    margin-right: 13px;
+    margin-right: 10px;
   }
 }
 
@@ -133,6 +133,7 @@ div.modal.dark-theme {
   }
   div.modal {
     padding-top: 48px;
+    padding-bottom: 41px;
   }
   [data-modal-btn] {
     width: 113px;
