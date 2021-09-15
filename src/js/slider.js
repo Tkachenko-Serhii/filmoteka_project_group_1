@@ -19,7 +19,6 @@ const glide = new Glide('.slider', {
   swipeThreshold: 40,
 });
 
-// getTopMovies();
 glide.mount();
 
 export default function getTopMovies() {
